@@ -1,41 +1,140 @@
 # tower_defense_final
 
-타워 디펜스 게임 (Unity 2D)
-1. 프로젝트 소개
+## Project Description
+This project is a 2D tower defense game made with Unity 6.  
+The player places towers on the map to stop enemies from reaching the end of the path.
 
-이 프로젝트는 Unity 6 (2D) 를 사용하여 제작한 타워 디펜스 게임입니다.
-플레이어는 맵 위에 타워를 설치하고 적의 이동을 막아야 하며, 모든 적 웨이브를 클리어하면 해당 레벨을 완료하게 됩니다.
+The game was developed as a small team project for a class assignment.  
+The main goal was to understand the basic structure of a tower defense game, including enemy waves, UI flow, and level progression.
 
-본 프로젝트는 수업 과제로 진행된 팀 프로젝트이며, 기본적인 타워 디펜스 게임 구조를 구현하는 것을 목표로 하였습니다.
+---
 
-2. 게임 특징
+## Main Features
+- Wave-based enemy system
+- Tower placement and simple upgrades
+- Coin system for building and upgrading towers
+- Life system and game over condition
+- Level selection menu
+- Victory screen after clearing a level
 
-웨이브 단위로 등장하는 적 시스템
+---
 
-타워 설치 및 간단한 업그레이드 기능
+## Controls
+- Mouse click: place towers and click UI buttons
+- UI buttons: control game speed and scene transitions
 
-코인(재화) 시스템
+---
 
-생명 수치에 따른 게임 오버 처리
+## Levels
+- Level 1: available from the start
+- Level 2: unlocked after clearing Level 1
 
-레벨 선택 화면
+Level unlocking is handled using Unity PlayerPrefs.
 
-레벨 클리어 시 승리 화면 표시
+---
 
-3. 조작 방법
+## Game Flow
+- Enemies appear in waves.
+- If all waves are cleared, the Victory screen is shown.
+- If the player's lives reach zero, the Game Over screen is shown.
+- From the Victory screen, the player can return to the Level Select scene.
 
-마우스 클릭: 타워 설치 및 UI 버튼 선택
+---
 
-UI 버튼:
+## Development Environment
+- Engine: Unity 6 (6000.2.2f1)
+- Language: C#
+- UI: Unity UI / TextMeshPro
+- Object pooling is used for enemy spawning.
 
-게임 속도 조절
+---
 
-승리 / 게임 오버 화면 버튼
+## How to Run
+1. Open the project in Unity Hub.
+2. Open the `MainMenu` scene.
+3. Press Play to start the game.
+4. Select a level from the Level Select screen.
 
-4. 레벨 구성
+---
 
-Level 1: 처음부터 플레이 가능
+## Notes
+- Some audio-related warnings may appear in the console, but they do not affect gameplay.
+- Game balance is kept simple due to the scope of the assignment.
 
-Level 2: Level 1을 클리어하면 해금
+---
+
+## Team Members
+- 2023320171 지가영
+- 2023320166 하기연
+
+---------------------------------------------
+
+# 타워 디펜스 게임 (Unity 2D)
+
+## 프로젝트 설명
+이 프로젝트는 Unity 6를 사용해 제작한 2D 타워 디펜스 게임입니다.  
+플레이어는 맵 위에 타워를 설치하여 적이 길의 끝에 도달하지 못하도록 막아야 합니다.
+
+본 게임은 수업 과제로 진행된 소규모 팀 프로젝트이며,  
+타워 디펜스 게임의 기본적인 구조를 이해하는 것을 목표로 제작되었습니다.
+
+---
+
+## 주요 기능
+- 웨이브 기반 적 등장 시스템
+- 타워 설치 및 간단한 업그레이드
+- 코인(재화) 시스템
+- 생명 수치에 따른 게임 오버 처리
+- 레벨 선택 화면
+- 레벨 클리어 시 승리 화면 표시
+
+---
+
+## 조작 방법
+- 마우스 클릭: 타워 설치 및 UI 버튼 선택
+- UI 버튼: 게임 속도 조절 및 화면 이동
+
+---
+
+## 레벨 구성
+- Level 1: 처음부터 플레이 가능
+- Level 2: Level 1 클리어 후 해금
 
 레벨 해금은 Unity의 PlayerPrefs를 사용하여 구현되었습니다.
+
+---
+
+## 게임 진행 방식
+- 적은 웨이브 단위로 등장합니다.
+- 모든 웨이브를 클리어하면 Victory 화면이 표시됩니다.
+- 생명이 모두 소진되면 Game Over 화면이 표시됩니다.
+- Victory 화면에서 Level Select 화면으로 돌아갈 수 있습니다.
+
+---
+
+## 개발 환경
+- 엔진: Unity 6 (6000.2.2f1)
+- 사용 언어: C#
+- UI: Unity UI / TextMeshPro
+- 적 생성에 오브젝트 풀링 기법을 사용했습니다.
+
+---
+
+## 실행 방법
+1. Unity Hub에서 프로젝트를 엽니다.
+2. `MainMenu` 씬을 실행합니다.
+3. Level Select 화면에서 레벨을 선택해 게임을 시작합니다.
+
+---
+## 참고 사항
+- 콘솔에 오디오 관련 경고 메시지가 나타날 수 있으나, 게임 진행에는 영향을 주지 않습니다.
+- 과제 범위에 맞춰 전체적인 게임 구조는 단순하게 구성되었습니다.
+
+---
+
+## 팀원
+- 2023320171 지가영
+- 2023320166 하기연
+
+
+#######중간
