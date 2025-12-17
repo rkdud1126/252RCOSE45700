@@ -137,4 +137,34 @@ Level unlocking is handled using Unity PlayerPrefs.
 - 2023320166 하기연
 
 
-#######중간
+########################################
+
+## Updates from Midterm to Final
+
+After the midterm submission, several changes and additions were made to the project.
+
+Based on the original Level 1 created for the midterm, we added a **Main Menu**, **Level Select**, and a new **Level 2**.  
+The UI for the Main Menu and Level Select scenes was designed in a simple and basic form, focusing on functionality rather than visual detail.
+
+We also adjusted the difficulty of the original level from the midterm.  
+Some values such as enemy count and timing were modified to improve the overall game flow.  
+For **Level 2**, the difficulty was slightly increased compared to Level 1.
+
+In addition, a **level locking system** was implemented.  
+The player cannot access Level 2 before clearing Level 1, and Level 2 becomes available only after Level 1 is completed.
+
+## 중간고사 이후 기말까지의 변경 사항
+
+중간고사 제출 이후 프로젝트에 여러 가지 수정과 추가 작업을 진행하였습니다.
+
+중간고사 때 제작했던 Level 1을 기반으로 **Main Menu**, **Level Select**, 그리고 새로운 **Level 2**를 추가하였습니다.  
+Main Menu와 Level Select의 UI는 전체적인 구조를 이해할 수 있도록 간단한 형태로 구현하였습니다.
+
+또한 중간고사 당시의 기존 Level 1에 대해 난이도를 일부 조정하였습니다.  
+적의 수나 진행 속도 등을 수정하여 게임 흐름이 더 자연스럽도록 개선하였습니다.  
+Level 2의 경우 Level 1보다 약간 더 높은 난이도로 설계하였습니다.
+
+추가로 **관문(레벨 잠금) 기능**을 구현하였습니다.  
+Level 1을 클리어하기 전에는 Level 2에 진입할 수 없으며,  
+Level 1을 완료한 이후에만 Level 2가 해금되도록 구성하였습니다.
+
