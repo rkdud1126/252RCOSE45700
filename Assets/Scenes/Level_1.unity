@@ -1584,8 +1584,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6373,9 +6373,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnMode: 0
-  enemyCount: 10
+  enemyCount: 5
   delayBtwWaves: 1
-  finalWave: 20
+  finalWave: 5
   delayBtwSpawns: 0.5
   minRandomDelay: 1
   maxRandomDelay: 3
