@@ -43,7 +43,7 @@ public class UIManager : Singleton<UIManager>
 
     public void FastTime()
     {
-        Time.timeScale = 2f;
+        Time.timeScale = 3f;
     }
 
     public void ShowGameOverPanel()
