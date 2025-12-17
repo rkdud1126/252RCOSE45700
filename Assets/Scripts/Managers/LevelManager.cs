@@ -18,27 +18,10 @@ public class LevelManager : Singleton<LevelManager>
 
     private void ReduceLives(Enemy enemy)
     {
-        int damage = enemy.DamageToCarrot;
-        TotalLives -= damage;
-        
-        Debug.Log($"敌人到达终点！扣减 {damage} 点生命值，剩余 {TotalLives}");
-        
+        TotalLives--;
         if (TotalLives <= 0)
         {
             TotalLives = 0;
-            GameOver();
-        }
-    }
-
-    public void TakeDamage(int damage = 1)
-    {
-        TotalLives -= damage;
-        TotalLives = Mathf.Max(0, TotalLives);
-        
-        Debug.Log($"受到伤害！扣减 {damage} 点生命值，剩余 {TotalLives}");
-        
-        if (TotalLives <= 0)
-        {
             GameOver();
         }
     }

@@ -12,8 +12,7 @@ public class Singleton<T> : MonoBehaviour where T : Component
         {
             if (instance == null)
             {
-                // 使用新的 FindAnyObjectByType 替代过时的 FindObjectOfType
-                instance = FindAnyObjectByType<T>();
+                instance = FindObjectOfType<T>();
                 if (instance == null)
                 {
                     GameObject newInstance = new GameObject();

@@ -8,9 +8,6 @@ public class Enemy : MonoBehaviour
     public static Action<Enemy> OnEndReached;
     
     [SerializeField] private float moveSpeed = 3f;
-    
-    [Header("对萝卜的伤害")]
-    [SerializeField] private int damageToCarrot = 1;
 
     /// <summary>
     /// Move speed of our enemy
@@ -24,11 +21,6 @@ public class Enemy : MonoBehaviour
 
     public EnemyHealth EnemyHealth { get; set; }
     
-    /// <summary>
-    /// 对萝卜造成的伤害值
-    /// </summary>
-    public int DamageToCarrot { get => damageToCarrot; }
-
     /// <summary>
     /// Returns the current Point Position where this enemy needs to go
     /// </summary>
